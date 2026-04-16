@@ -1,0 +1,104 @@
+body {
+  background: #f4f6f9;
+  font-family: sans-serif;
+}
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background: #0d2d4d;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+.sidebar i {
+  color: white;
+  margin: 18px 0;
+  font-size: 18px;
+}
+.main {
+  margin-left: 60px;
+}
+.topbar {
+  height: 50px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-1-icon {
+  color: #006600;
+}
+.card-2-icon {
+  color: #9d85f0;
+  background-color: #f1f2fd;
+}
+#card-num-2 {
+  color: #9d85f0;
+}
+.card-3-icon {
+  color: #ffa902;
+  background-color: #fef4e8;
+}
+#card-3-num {
+  color: #ffa902;
+}
+.card-4-icon {
+  color: #ed145b;
+  background-color: #fff0f5;
+}
+#card-4-num {
+  color: #ed145b;
+}
+
+.todo-item {
+  padding: 10px;
+  background: #f1f3f6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.todo-item.active {
+  background: #e7f1ff;
+}
+
+/* Meeting */
+.meeting-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f3f6;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Feed */
+.feed-item {
+  padding: 10px;
+  background: #f1f3f6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Event */
+.event {
+  display: flex;
+  gap: 10px;
+}
+
+.date {
+  background: #e7f1ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}
